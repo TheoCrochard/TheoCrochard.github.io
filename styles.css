@@ -4,14 +4,14 @@ body{
 
 h1{
     display: flex;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: "asimovian", sans-serif;
     justify-content: center;
     align-items: center;
 }
 
 h2{
     display: flex;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: "asimovian", sans-serif;
     justify-content: center;
     align-items: center;
 }
@@ -22,16 +22,9 @@ p{
 
 .grid{
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 24px;
-}
-
-.annee{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-style: italic;
-    color: rgb(255, 255, 255);
-}
-
-.activite{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: "asimovian", sans-serif;
+    padding-top: 50px;
+    padding-left: 50px;
 }
