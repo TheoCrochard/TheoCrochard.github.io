@@ -1,0 +1,92 @@
+.fond{
+    background-color: #000000;
+}
+
+.np{
+    font-family: "asimovian";
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+    border-left: 3px solid rgb(74, 158, 253);
+    padding-left: 25px;
+    margin-left: 0px;
+    margin-top: 20px;
+    height: 186px;
+}
+
+.photo{
+    width: 140px;
+    margin: 20px 20px 20px 20px;
+}
+
+.prenom{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    text-align: left;
+}
+
+.cv{
+    margin-top: 8px;
+    font-size: 3cqh;
+    text-align: left;
+}
+
+.presentation{ 
+    display: grid;
+    grid-template-columns:  auto 1fr 3fr;
+}
+
+.contenu{
+    color: #ffffff;
+    display: grid;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.titres{
+    font-size: 30px;
+    font-family: "Asimovian";
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+}
+
+.texte{
+    font-size: 15px;
+    font-family: Helvetica, sans-serif;
+}
+
+.base{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 40px;
+    border-left: 3px solid rgb(74, 158, 253);
+    padding-left: 25px;
+    margin-left: 0px;
+}
+
+.suite{
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: 2fr 1fr;
+    margin-bottom: 40px;
+    border-left: 3px solid rgb(74, 158, 253);
+    padding-left: 25px;
+    gap: 40px;
+}
+
+.annees{
+    font-size: 18px;
+    font-family: "asimovian";
+    color: rgb(74, 158, 253);
+}
+
+.fond {
+    background-color: #000;
+    background-image: 
+        linear-gradient(45deg, rgba(255,255,255,0.05) 25%, transparent 25%),
+        linear-gradient(-45deg, rgba(255,255,255,0.05) 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, rgba(255,255,255,0.05) 75%),
+        linear-gradient(-45deg, transparent 75%, rgba(255,255,255,0.05) 75%);
+    background-size: 20px 20px;
+    background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+}
