@@ -1,0 +1,237 @@
+body{
+    background: rgb(255, 255, 255);
+}
+
+.titre{
+    font-family: "asimovian";
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    display: grid;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    text-decoration: none;
+}
+
+.accueil{
+    text-decoration: none;
+    color: inherit;
+}
+
+.accueil:hover{
+    color: rgb(255, 0, 0);
+    font-size: 45px;
+    transition: 0.3s;
+}
+
+.projets{
+    font-family: "asimovian";
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    display: grid;
+    grid-auto-rows: 100px;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 150px 150px 150px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 60px;
+    border-left: 3px solid rgb(255, 255, 255);
+    padding-left: 80px;
+    padding-right: 80px;
+    gap: 50px;
+}
+
+.projet{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-left: 3px solid rgb(0, 0, 0);
+    padding-left: 14px;
+}
+
+.projet:hover{
+    border-left: 3px solid rgb(255, 0, 0);
+    transition: 0.4s;
+}
+
+.imgprojet{
+    filter: blur(5px);
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.imgprojet:hover{
+    filter: none;
+    transition: 0.5s;
+    cursor: help;
+    border-radius: 15px;
+}
+
+.lienp{
+    text-decoration: none;
+    color: inherit;
+}
+
+.lienp:hover{
+    color: rgb(255, 0, 0);
+    font-size: 14px;
+    transition: 0.4s;
+}
+
+.tests{
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 150px 150px 150px;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 200px;
+    margin-bottom: 45px;
+    gap: 50px;
+}
+
+.imgtest{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    filter: blur(4px);
+}
+
+.imgtest:hover{
+    filter: none;
+    transition: 0.5s;
+    border-radius: 15px;
+}
+
+.re{
+    font-family: "asimovian";
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    place-items: center;
+    background-color: rgb(0, 0, 0);
+    padding: 0px 17px 0px 17px;
+    border-radius: 15px;
+}
+
+.re2{
+    text-decoration: none;
+    color: inherit;
+}
+
+.re2:hover{
+    color: red;
+    transition: 0.4s;
+}
+
+.coor{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* justify-content: center;
+    justify-items: center; */
+    margin: 200px auto 0 auto;
+    margin-bottom: 75px;
+    background: rgb(0, 0, 0);
+    padding: 10px;
+    width: 50%;
+    border-radius: 20px;
+    gap: 40px;
+}
+
+.infos{
+    color: white;
+    font-family: "asimovian";
+    display: grid;
+    justify-items: start;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.infos2{
+    color: white;
+    font-family: "asimovian";
+    display: grid;
+    justify-items: end;
+    align-items: center;
+    text-align: end;
+    padding-right: 10px;
+}
+
+.lienf{
+    text-decoration: none;
+    color: inherit;
+}
+
+.lienf:hover{
+    color: red;
+    transition: 0.4s;
+}
+
+.text1{
+    font-family: "montserrat";
+    font-size: 15px;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 50%;
+    border-left: 2px solid black;
+    padding-left: 20px;
+}
+
+.slides {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 250px; /* ajuste selon la hauteur de tes images */
+  margin-top: 120px;
+}
+
+.slides-track {
+  display: flex;
+  width: calc(250px * 10); /* largeur totale (nombre d’images × largeur individuelle) */
+  animation: scroll 30s linear infinite;
+}
+
+.slides-track img {
+  width: 250px; /* taille de chaque image */
+  height: 100%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.KJG img{
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.KJG1{
+    margin-top: 170px;
+    display: grid;
+    grid-template-columns: auto 2fr;
+    align-items: center;
+    gap: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
+
+}
+
+.contenu1{
+    font-family: "Montserrat";
+    font-size: 15px;
+    place-items: end;
+}
