@@ -37,19 +37,20 @@ body::before {
 .accueil{
     font-family: "Vend sans";
     color: #ff0000;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.6);
     position: sticky;
     display: grid;
     text-align: center;
     grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 100px;
+    grid-template-rows:100px;
     justify-content: center;
     justify-items: center;
     align-items: center;
     margin-bottom: 100px;
     position: sticky;
     top: 0;
-    backdrop-filter: blur(5px);
+    /* backdrop-filter: blur(5px); */
+    backdrop-filter: grayscale(100%);
 }
 
 .ac{
@@ -127,7 +128,7 @@ body::before {
     justify-content: center;
     justify-items: center;
     align-items: center;
-    transition: all 0.3s;
+    transition: font-size 0.3s;
 }
 
 @media (min-width:768px){
@@ -144,7 +145,7 @@ body::before {
         justify-content: center;
         justify-items: center;
         align-items: center;
-        transition: all 0.3s;
+        transition: font-size 0.3s;
         }
 }
 
@@ -162,7 +163,7 @@ body::before {
         justify-content: center;
         justify-items: center;
         align-items: center;
-        transition: all 0.3s;
+        transition: font-size 0.3s;
         }
 }
 
