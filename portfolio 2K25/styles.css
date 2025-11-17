@@ -49,8 +49,20 @@ body::before {
     margin-bottom: 100px;
     position: sticky;
     top: 0;
-    /* backdrop-filter: blur(5px); */
     backdrop-filter: grayscale(100%);
+    background-image: linear-gradient(
+        120deg,
+        rgba(255,255,255,0.05) 0%,
+        rgba(255,255,255,0.1) 20%,
+        rgba(255,255,255,0.05) 100%
+    );
+    background-size: 200% 100%;
+    animation: vent 5s linear infinite;
+}
+
+@keyframes vent {
+    0% { background-position: 0 0; }
+    100% { background-position: -200% 0; }
 }
 
 .ac{
@@ -69,7 +81,7 @@ body::before {
     font-family: "Stack Sans Notch";
 }
 
-.lien1{
+.proj1{
     display: grid;
     grid-template-columns: 30% 30% 30%;
     grid-template-rows: repeat(3, 250px);
@@ -80,7 +92,7 @@ body::before {
 }
 
 @media (min-width:768px){
-    .lien1{
+    .proj1{
         display: grid;
         grid-template-columns: 30% 30% 30%;
         grid-template-rows: repeat(3, 400px);
@@ -92,7 +104,7 @@ body::before {
 }
 
 @media (min-width:1068px){
-    .lien1{
+    .proj1{
         display: grid;
         grid-template-columns: 30% 30% 30%;
         grid-template-rows: repeat(3, 500px);
@@ -113,6 +125,7 @@ body::before {
     object-fit: cover;
     width: 100%;
     height: 100%;
+    grid-column: span 2;
 }
 
 .accesproj1{
@@ -123,12 +136,12 @@ body::before {
     font-family: "Stack Sans Notch";
     text-decoration: none;
     color: rgb(0, 0, 0);
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
     justify-content: center;
     justify-items: center;
     align-items: center;
-    transition: font-size 0.3s;
+    transition: font-size 0.4s ease, border-radius 0.4s ease, color 0.3s ease;
 }
 
 @media (min-width:768px){
@@ -140,12 +153,12 @@ body::before {
         font-family: "Stack Sans Notch";
         text-decoration: none;
         color: rgb(0, 0, 0);
-        font-size: 40px;
+        font-size: 45px;
         text-align: center;
         justify-content: center;
         justify-items: center;
         align-items: center;
-        transition: font-size 0.3s;
+        transition: font-size 0.4s ease, border-radius 0.4s ease, color 0.3s ease;
         }
 }
 
@@ -158,24 +171,24 @@ body::before {
         font-family: "Stack Sans Notch";
         text-decoration: none;
         color: rgb(0, 0, 0);
-        font-size: 50px;
+        font-size: 60px;
         text-align: center;
         justify-content: center;
         justify-items: center;
         align-items: center;
-        transition: font-size 0.3s;
+        transition: font-size 0.4s ease, border-radius 0.4s ease, color 0.3s ease;
         }
 }
 
 .accesproj1:hover{
-    font-size: 28px;
+    font-size: 23px;
     color: rgb(255, 0, 0);
-    backdrop-filter: blur(10px);
+    border-radius: 20px;
 }
 
 @media (min-width:768px){
     .accesproj1:hover{
-        font-size: 28px;
+        font-size: 38px;
         color: rgb(255, 0, 0);
         backdrop-filter: blur(10px);
 }
@@ -183,7 +196,7 @@ body::before {
 
 @media (min-width:1068px){
     .accesproj1:hover{
-        font-size: 28px;
+        font-size: 48px;
         color: rgb(255, 0, 0);
         backdrop-filter: blur(10px);
 }
