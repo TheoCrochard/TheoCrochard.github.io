@@ -57,6 +57,7 @@ html, body {
     right: 0;
     backdrop-filter: grayscale(100%);
     width: 100vw;
+    z-index: 1;
 }
 
 .ac{
@@ -125,6 +126,7 @@ html, body {
     object-fit: cover;
     width: 100%;
     height: 100%;
+    border: 2px solid black;
 }
 
 .ap-col{
@@ -132,6 +134,7 @@ html, body {
     width: 100%;
     height: 100%;
     grid-column: span 2;
+    border: 2px solid black;
 }
 
 .accesproj1{
@@ -207,15 +210,20 @@ html, body {
 }
 
 .image-vide {
-    width: 100%;       /* prend la largeur du conteneur */
-    height: 100%;      /* prend la hauteur du conteneur */
-    border: 3px solid rgb(255, 0, 0);  /* contour blanc */
-    background-color: transparent; /* rectangle vide */
-    box-sizing: border-box;  /* pour que la bordure soit incluse dans la taille */
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-    color: white;
+    position: relative; 
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(0, 0, 0);
+    overflow: hidden; /* nécessaire pour le pseudo-élément */
 }
+
+.image-vide::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(255, 0, 0, 0.3);
+    backdrop-filter: invert(80%);
+    z-index: 0;
+}
+
 
