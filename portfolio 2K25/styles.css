@@ -34,11 +34,15 @@ body::before {
     background-attachment: fixed;
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
 .accueil{
     font-family: "Vend sans";
     color: #ff0000;
     background-color: rgba(0, 0, 0, 0.6);
-    position: sticky;
     display: grid;
     text-align: center;
     grid-template-columns: 33% 33% 33%;
@@ -49,20 +53,10 @@ body::before {
     margin-bottom: 100px;
     position: sticky;
     top: 0;
+    left: 0;
+    right: 0;
     backdrop-filter: grayscale(100%);
-    background-image: linear-gradient(
-        120deg,
-        rgba(255,255,255,0.05) 0%,
-        rgba(255,255,255,0.1) 20%,
-        rgba(255,255,255,0.05) 100%
-    );
-    background-size: 200% 100%;
-    animation: vent 5s linear infinite;
-}
-
-@keyframes vent {
-    0% { background-position: 0 0; }
-    100% { background-position: -200% 0; }
+    width: 100vw;
 }
 
 .ac{
@@ -79,9 +73,17 @@ body::before {
 .nom{
     font-size: 30px;
     font-family: "Stack Sans Notch";
+    transition: all 0.1s;
+    text-decoration: none;
+    color: red;
 }
 
-.proj1{
+.nom:hover{
+    font-size: 32px;
+    color: white;
+}
+
+.proj{
     display: grid;
     grid-template-columns: 30% 30% 30%;
     grid-template-rows: repeat(3, 250px);
@@ -92,25 +94,29 @@ body::before {
 }
 
 @media (min-width:768px){
-    .proj1{
+    .proj{
         display: grid;
         grid-template-columns: 30% 30% 30%;
-        grid-template-rows: repeat(3, 400px);
+        grid-template-rows: repeat(3, 350px);
         justify-content: center;
         justify-items: center;
         align-items: center;
+        margin-left: 50px;
+        margin-right: 50px;
         gap: 10px;
     }
 }
 
 @media (min-width:1068px){
-    .proj1{
+    .proj{
         display: grid;
         grid-template-columns: 30% 30% 30%;
-        grid-template-rows: repeat(3, 500px);
+        grid-template-rows: repeat(3, 450px);
         justify-content: center;
         justify-items: center;
         align-items: center;
+        margin-left: 100px;
+        margin-right: 100px;
         gap: 10px;
     }
 }
@@ -131,7 +137,7 @@ body::before {
 .accesproj1{
     display: grid;
     background: rgba(255, 255, 255, 0.3);
-    width: 29vw;
+    width: 28.5vw;
     height: 250px;
     font-family: "Stack Sans Notch";
     text-decoration: none;
@@ -148,8 +154,8 @@ body::before {
     .accesproj1{
         display: grid;
         background: rgba(255, 255, 255, 0.3);
-        width: 30vw;
-        height: 400px;
+        width: 25vw;
+        height: 350px;
         font-family: "Stack Sans Notch";
         text-decoration: none;
         color: rgb(0, 0, 0);
@@ -166,8 +172,8 @@ body::before {
     .accesproj1{
         display: grid;
         background: rgba(255, 255, 255, 0.3);
-        width: 30vw;
-        height: 500px;
+        width: 25vw;
+        height: 450px;
         font-family: "Stack Sans Notch";
         text-decoration: none;
         color: rgb(0, 0, 0);
@@ -176,7 +182,7 @@ body::before {
         justify-content: center;
         justify-items: center;
         align-items: center;
-        transition: font-size 0.4s ease, border-radius 0.4s ease, color 0.3s ease;
+        transition: font-size 0.05s ease, border-radius 0.4s ease, color 0.3s ease;
         }
 }
 
@@ -190,7 +196,6 @@ body::before {
     .accesproj1:hover{
         font-size: 38px;
         color: rgb(255, 0, 0);
-        backdrop-filter: blur(10px);
 }
 }
 
@@ -198,6 +203,19 @@ body::before {
     .accesproj1:hover{
         font-size: 48px;
         color: rgb(255, 0, 0);
-        backdrop-filter: blur(10px);
 }
 }
+
+.image-vide {
+    width: 100%;       /* prend la largeur du conteneur */
+    height: 100%;      /* prend la hauteur du conteneur */
+    border: 3px solid rgb(255, 0, 0);  /* contour blanc */
+    background-color: transparent; /* rectangle vide */
+    box-sizing: border-box;  /* pour que la bordure soit incluse dans la taille */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: white;
+}
+
