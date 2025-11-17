@@ -64,14 +64,14 @@ body::before {
     font-size: 25px;
 }
 .nom{
-    font-size: 35px;
+    font-size: 30px;
     font-family: "Stack Sans Notch";
 }
 
 .lien1{
     display: grid;
     grid-template-columns: 30% 30% 30%;
-    grid-template-rows: repeat(3, 300px);
+    grid-template-rows: repeat(3, 250px);
     justify-content: center;
     justify-items: center;
     align-items: center;
@@ -117,16 +117,17 @@ body::before {
 .accesproj1{
     display: grid;
     background: rgba(255, 255, 255, 0.3);
-    width: 30vw;
-    height: 300px;
+    width: 29vw;
+    height: 250px;
     font-family: "Stack Sans Notch";
     text-decoration: none;
-    color: red;
+    color: rgb(0, 0, 0);
     font-size: 30px;
     text-align: center;
     justify-content: center;
     justify-items: center;
     align-items: center;
+    transition: all 0.3s;
 }
 
 @media (min-width:768px){
@@ -137,12 +138,14 @@ body::before {
         height: 400px;
         font-family: "Stack Sans Notch";
         text-decoration: none;
-        color: red;
+        color: rgb(0, 0, 0);
         font-size: 40px;
         text-align: center;
         justify-content: center;
         justify-items: center;
         align-items: center;
+        transition: all 0.3s;
+        }
 }
 
 @media (min-width:1068px){
@@ -153,10 +156,34 @@ body::before {
         height: 500px;
         font-family: "Stack Sans Notch";
         text-decoration: none;
-        color: red;
+        color: rgb(0, 0, 0);
         font-size: 50px;
         text-align: center;
         justify-content: center;
         justify-items: center;
         align-items: center;
+        transition: all 0.3s;
+        }
+}
+
+.accesproj1:hover{
+    font-size: 28px;
+    color: rgb(255, 0, 0);
+    backdrop-filter: blur(10px);
+}
+
+@media (min-width:768px){
+    .accesproj1:hover{
+        font-size: 28px;
+        color: rgb(255, 0, 0);
+        backdrop-filter: blur(10px);
+}
+}
+
+@media (min-width:1068px){
+    .accesproj1:hover{
+        font-size: 28px;
+        color: rgb(255, 0, 0);
+        backdrop-filter: blur(10px);
+}
 }
