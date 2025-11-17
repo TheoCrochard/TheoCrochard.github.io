@@ -52,7 +52,7 @@ html, body {
     top: 0;
     left: 0;
     right: 0;
-    backdrop-filter: blur(4px);
+    backdrop-filter: grayscale(100%) blur(4px);
     width: 100vw;
     z-index: 1;
 }
@@ -75,7 +75,14 @@ html, body {
 
 .ac:hover{
     color: rgb(255, 0, 0);
-    font-size: 25px;
+    font-size: 23px;
+}
+
+@media (max-width:768px){
+    .ac:hover{
+        color: rgb(255, 0, 0);
+        font-size: 18px;
+    }
 }
 
 .nom{
@@ -97,8 +104,15 @@ html, body {
 }
 
 .nom:hover{
-    font-size: 32px;
+    font-size: 33px;
     color: rgb(255, 0, 0);
+}
+
+@media (max-width:768px){
+    .nom:hover{
+        font-size: 23px;
+        color: rgb(255, 0, 0);
+    }
 }
 
 .proj{
@@ -168,6 +182,8 @@ html, body {
     justify-content: center;
     justify-items: center;
     align-items: center;
+    box-sizing: border-box;
+    padding: 20px;
     transition: font-size 0.4s ease, border-radius 0.4s ease, color 0.3s ease;
     border: 2px solid black;
 }
@@ -181,11 +197,13 @@ html, body {
         font-family: "Stack Sans Notch";
         text-decoration: none;
         color: rgb(0, 0, 0);
-        font-size: 45px;
+        font-size: 35px;
         text-align: center;
         justify-content: center;
         justify-items: center;
         align-items: center;
+        box-sizing: border-box;
+        padding: 20px;
         transition: font-size 0.4s ease, border-radius 0.4s ease, color 0.3s ease;
         }
 }
@@ -199,11 +217,13 @@ html, body {
         font-family: "Stack Sans Notch";
         text-decoration: none;
         color: rgb(0, 0, 0);
-        font-size: 60px;
+        font-size: 45px;
         text-align: center;
         justify-content: center;
         justify-items: center;
         align-items: center;
+        box-sizing: border-box;
+        padding: 20px;
         transition: font-size 0.05s ease, border-radius 0.4s ease, color 0.3s ease;
         }
 }
@@ -240,15 +260,52 @@ html, body {
     justify-items: center;
     align-items: center;
     text-align: center;
-    font-size: 25px;
+    font-size: 15px;
+    box-sizing: border-box;
+    padding: 20px;
 }
 
 .image-vide::before {
-    content: '';
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
     backdrop-filter: contrast(150%);
     z-index: 0;
 }
 
+@media (min-width:768px){
+.image-vide {
+    position: relative; 
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(0, 0, 0);
+    overflow: hidden; /* nécessaire pour le pseudo-élément */
+    font-family: "Vend Sans";
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+}
 
+@media (min-width:1068px){
+.image-vide {
+    position: relative; 
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(0, 0, 0);
+    overflow: hidden; /* nécessaire pour le pseudo-élément */
+    font-family: "Vend Sans";
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    font-size: 35px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+}
