@@ -67,16 +67,36 @@ html, body {
     transition: font-size 0.2s;
 }
 
+@media (max-width:768px){
+    .ac{
+        text-decoration: none;
+        color: inherit;
+        font-size: 15px;
+        transition: font-size 0.2s;
+    }
+}
+
 .ac:hover{
     color: rgb(255, 255, 255);
     font-size: 25px;
 }
+
 .nom{
     font-size: 30px;
     font-family: "Stack Sans Notch";
     transition: all 0.1s;
     text-decoration: none;
     color: red;
+}
+
+@media (max-width:768px){
+    .nom{
+        font-size: 20px;
+        font-family: "Stack Sans Notch";
+        transition: all 0.1s;
+        text-decoration: none;
+        color: red;
+    }
 }
 
 .nom:hover{
@@ -135,6 +155,7 @@ html, body {
     height: 100%;
     grid-column: span 2;
     border: 2px solid black;
+    box-sizing: border-box;
 }
 
 .accesproj1{
@@ -221,8 +242,7 @@ html, body {
     content: '';
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(255, 0, 0, 0.3);
-    backdrop-filter: invert(80%);
+    backdrop-filter: contrast(150%);
     z-index: 0;
 }
 
