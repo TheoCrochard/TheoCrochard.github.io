@@ -1,237 +1,114 @@
-body{
-    background: rgb(255, 255, 255);
+/* body {
+    background: #fff;
+    position: relative;
 }
 
-.titre{
-    font-family: "asimovian";
-    font-size: 40px;
-    color: rgb(0, 0, 0);
-    display: grid;
-    justify-content: center;
-    margin-bottom: 40px;
-    margin-top: 30px;
-    text-decoration: none;
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: -1;
+    background-image:
+        radial-gradient(circle, rgba(0,0,0,0.05) 1px, transparent 1px),
+        radial-gradient(circle, rgba(0,0,0,0.04) 1px, transparent 1px),
+        radial-gradient(circle, rgba(0,0,0,0.03) 1px, transparent 1px);
+    background-size:
+        3px 3px,
+        5px 5px,
+        7px 7px;
+    opacity: 0.6;
+} */
+
+.acc{
+    background-image: url(visuels-p/fond\ accueil.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.acc2{
+    background-image: url(visuels-p/fond.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .accueil{
-    text-decoration: none;
-    color: inherit;
-}
-
-.accueil:hover{
-    color: rgb(255, 0, 0);
-    font-size: 45px;
-    transition: 0.3s;
-}
-
-.projets{
-    font-family: "asimovian";
-    color: rgb(0, 0, 0);
-    font-size: 15px;
+    font-family: "Vend sans";
+    color: #ff0000;
+    /* background-color: rgba(255, 255, 255, 0.3); */
+    position: sticky;
     display: grid;
-    grid-auto-rows: 100px;
-    grid-template-columns: 150px 150px 150px;
-    grid-template-rows: 150px 150px 150px;
+    /* font-weight: bold; */
+    grid-template-columns: 33% 33% 33%;
     justify-content: center;
     justify-items: center;
     align-items: center;
-    gap: 60px;
-    border-left: 3px solid rgb(255, 255, 255);
-    padding-left: 80px;
-    padding-right: 80px;
-    gap: 50px;
+    padding-bottom: 100px;
 }
 
-.projet{
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    border-left: 3px solid rgb(0, 0, 0);
-    padding-left: 14px;
-}
-
-.projet:hover{
-    border-left: 3px solid rgb(255, 0, 0);
-    transition: 0.4s;
-}
-
-.imgprojet{
-    filter: blur(5px);
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
-
-.imgprojet:hover{
-    filter: none;
-    transition: 0.5s;
-    cursor: help;
-    border-radius: 15px;
-}
-
-.lienp{
+.ac{
     text-decoration: none;
     color: inherit;
+    font-size: 20px;
+    transition: font-size 0.2s;
 }
 
-.lienp:hover{
-    color: rgb(255, 0, 0);
-    font-size: 14px;
-    transition: 0.4s;
-}
-
-.tests{
-    display: grid;
-    grid-template-columns: 150px 150px 150px;
-    grid-template-rows: 150px 150px 150px;
-    justify-content: center;
-    justify-items: center;
-    margin-top: 200px;
-    margin-bottom: 45px;
-    gap: 50px;
-}
-
-.imgtest{
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    filter: blur(4px);
-}
-
-.imgtest:hover{
-    filter: none;
-    transition: 0.5s;
-    border-radius: 15px;
-}
-
-.re{
-    font-family: "asimovian";
-    font-size: 15px;
+.ac:hover{
     color: rgb(255, 255, 255);
-    text-align: center;
+    font-size: 25px;
+}
+.nom{
+    font-size: 35px;
+    font-family: "Stack Sans Notch";
+}
+
+.lien1{
     display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: repeat(3, 300px);
     justify-content: center;
-    place-items: center;
-    background-color: rgb(0, 0, 0);
-    padding: 0px 17px 0px 17px;
-    border-radius: 15px;
-}
-
-.re2{
-    text-decoration: none;
-    color: inherit;
-}
-
-.re2:hover{
-    color: red;
-    transition: 0.4s;
-}
-
-.coor{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    /* justify-content: center;
-    justify-items: center; */
-    margin: 200px auto 0 auto;
-    margin-bottom: 75px;
-    background: rgb(0, 0, 0);
-    padding: 10px;
-    width: 50%;
-    border-radius: 20px;
-    gap: 40px;
-}
-
-.infos{
-    color: white;
-    font-family: "asimovian";
-    display: grid;
-    justify-items: start;
+    justify-items: center;
     align-items: center;
-    padding-left: 10px;
+    gap: 10px;
 }
 
-.infos2{
-    color: white;
-    font-family: "asimovian";
-    display: grid;
-    justify-items: end;
-    align-items: center;
-    text-align: end;
-    padding-right: 10px;
+@media (min-width:768px){
+    .lien1{
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        grid-template-rows: repeat(3, 300px);
+        justify-content: center;
+        ustify-items: center;
+        align-items: center;
+        gap: 10px;
+    }
 }
 
-.lienf{
-    text-decoration: none;
-    color: inherit;
-}
-
-.lienf:hover{
-    color: red;
-    transition: 0.4s;
-}
-
-.text1{
-    font-family: "montserrat";
-    font-size: 15px;
-    grid-template-columns: 1fr;
-    margin: 0 auto;
-    margin-top: 100px;
-    width: 50%;
-    border-left: 2px solid black;
-    padding-left: 20px;
-}
-
-.slides {
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  height: 250px; /* ajuste selon la hauteur de tes images */
-  margin-top: 120px;
-}
-
-.slides-track {
-  display: flex;
-  width: calc(250px * 10); /* largeur totale (nombre d’images × largeur individuelle) */
-  animation: scroll 30s linear infinite;
-}
-
-.slides-track img {
-  width: 250px; /* taille de chaque image */
-  height: 100%;
-  object-fit: cover;
-  margin-right: 20px;
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-.KJG img{
-    display: block;
-    width: 100%;
-    height: auto;
+.ap-co{
     object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
-.KJG1{
-    margin-top: 170px;
+.ap-col{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.accesproj1{
     display: grid;
-    grid-template-columns: auto 2fr;
+    background: rgba(255, 255, 255, 0.3);
+    width: 30vw;           /* 30% de la largeur de la page */
+    height: 300px;         /* hauteur fixe */
+    font-family: "Stack Sans Notch";
+    text-decoration: none;
+    color: red;
+    font-size: 50px;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
     align-items: center;
-    gap: 40px;
-    margin-left: 100px;
-    margin-right: 100px;
-
-}
-
-.contenu1{
-    font-family: "Montserrat";
-    font-size: 15px;
-    place-items: end;
 }
