@@ -14,3 +14,20 @@
 // }
 
 // createRain();
+
+const img = document.getElementById("toggleImg");
+
+const images = [
+  "visuels-p/coffret-artiste/IMG_8740.JPG",
+  "visuels-p/coffret-artiste/IMG_8745.JPG",
+  "visuels-p/coffret-artiste/IMG_8752.JPG",
+  "visuels-p/coffret-artiste/IMG_8756.JPG"
+];
+
+let index = 0;
+
+img.addEventListener("click", () => {
+  index = (index + 1) % images.length;
+  img.src = images[index];
+});
+
