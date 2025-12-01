@@ -58,7 +58,7 @@ html, body {
     display: grid;
     text-align: center;
     grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 80px;
+    grid-template-rows: 40px;
     justify-content: center;
     justify-items: center;
     align-items: center;
@@ -75,7 +75,7 @@ html, body {
 .ac{
     text-decoration: none;
     color: inherit;
-    font-size: 20px;
+    font-size: 15px;
     transition: font-size 0.2s;
 }
 
@@ -89,20 +89,18 @@ html, body {
 }
 
 .ac:hover{
-    color: rgb(255, 0, 0);
-    font-size: 23px;
+    color: rgb(134, 134, 134);
 }
 
 @media (max-width:768px){
     .ac:hover{
-        color: rgb(255, 0, 0);
-        font-size: 18px;
+        color: rgb(134, 134, 134);
     }
 }
 
 .nom{
-    font-size: 30px;
-    font-family: "Stack Sans Notch";
+    font-size: 15px;
+    font-family: "Vend sans";
     transition: all 0.1s;
     text-decoration: none;
     color: rgb(255, 255, 255);
@@ -110,8 +108,8 @@ html, body {
 
 @media (max-width:768px){
     .nom{
-        font-size: 20px;
-        font-family: "Stack Sans Notch";
+        font-size: 15px;
+        font-family: "Vend sans";
         transition: all 0.1s;
         text-decoration: none;
         color: rgb(255, 255, 255);
@@ -119,14 +117,12 @@ html, body {
 }
 
 .nom:hover{
-    font-size: 33px;
-    color: rgb(255, 0, 0);
+    color: rgb(134, 134, 134);
 }
 
 @media (max-width:768px){
     .nom:hover{
-        font-size: 23px;
-        color: rgb(255, 0, 0);
+        color: rgb(134, 134, 134);
     }
 }
 
@@ -175,7 +171,7 @@ html, body {
     object-fit: cover;
     width: 100%;
     height: 100%;
-    border: 1px solid black;
+    border: 2px solid black;
 }
 
 .ap-col{
@@ -183,7 +179,7 @@ html, body {
     width: 100%;
     height: 100%;
     grid-column: span 2;
-    border: 1px solid black;
+    border: 2px solid black;
     box-sizing: border-box;
 }
 
@@ -195,7 +191,7 @@ html, body {
     font-family: "Stack Sans Notch";
     text-decoration: none;
     color: rgb(0, 0, 0);
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
     justify-content: center;
     justify-items: center;
@@ -203,7 +199,7 @@ html, body {
     box-sizing: border-box;
     padding: 20px;
     transition: font-size 0.4s ease, border-radius 0.4s ease, color 0.3s ease;
-    border: 1px solid black;
+    border: 2px solid black;
 }
 
 @media (min-width:768px){
@@ -215,7 +211,7 @@ html, body {
         font-family: "Stack Sans Notch";
         text-decoration: none;
         color: rgb(0, 0, 0);
-        font-size: 35px;
+        font-size: 30px;
         text-align: center;
         justify-content: center;
         justify-items: center;
@@ -223,7 +219,7 @@ html, body {
         box-sizing: border-box;
         padding: 20px;
         transition: font-size 0.4s ease, border-radius 0.4s ease, color 0.3s ease;
-        border: 1px solid black;
+        border: 2px solid black;
         }
 }
 
@@ -236,7 +232,7 @@ html, body {
         font-family: "Stack Sans Notch";
         text-decoration: none;
         color: rgb(0, 0, 0);
-        font-size: 45px;
+        font-size: 40px;
         text-align: center;
         justify-content: center;
         justify-items: center;
@@ -244,27 +240,23 @@ html, body {
         box-sizing: border-box;
         padding: 20px;
         transition: font-size 0.05s ease, border-radius 0.4s ease, color 0.3s ease;
-        border: 1px solid black;
+        border: 2px solid black;
         }
 }
 
 .accesproj1:hover{
-    font-size: 23px;
-    color: rgb(255, 0, 0);
-    border-radius: 20px;
+    color: rgb(180, 180, 180);
 }
 
 @media (min-width:768px){
     .accesproj1:hover{
-        font-size: 38px;
-        color: rgb(255, 0, 0);
+        color: rgb(180, 180, 180);
 }
 }
 
 @media (min-width:1068px){
     .accesproj1:hover{
-        font-size: 48px;
-        color: rgb(255, 0, 0);
+        color: rgb(180, 180, 180);
 }
 }
 
@@ -273,7 +265,7 @@ html, body {
     width: 100%;
     height: 100%;
     background: white;
-    border: 1px solid rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
     font-family: "Vend Sans";
     display: grid;
     justify-content: center;
@@ -298,7 +290,7 @@ html, body {
     width: 100%;
     height: 100%;
     background: white;
-    border: 1px solid rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
     overflow: hidden; /* nécessaire pour le pseudo-élément */
     font-family: "Vend Sans";
     display: grid;
@@ -318,7 +310,7 @@ html, body {
         width: 100%;
         height: 100%;
         background: white;
-        border: 1px solid rgb(0, 0, 0);
+        border: 2px solid rgb(0, 0, 0);
         overflow: hidden; /* nécessaire pour le pseudo-élément */
         font-family: "Vend Sans";
         display: grid;
@@ -423,8 +415,10 @@ html, body {
 
 .titre-sticky {
     position: sticky;
-    top: 80px;
-    background: rgba(255, 255, 255, 0.7);
+    top: 40px;
+    /* background: rgba(255, 255, 255, 0.7); */
+    background: white;
+    border-bottom: 2px solid black;
     padding: 6px 0;
     z-index: 10;
     font-size: 15px;
