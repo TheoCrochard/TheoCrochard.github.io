@@ -647,7 +647,7 @@ html, body {
     margin: 20px 20px;
 }
 
-.proposbody{
+/* .proposbody{
     margin: 0;
     padding: 0;
     background: 
@@ -655,8 +655,8 @@ html, body {
         url("visuels-p/graph-garage.png");
     background-size: cover;
     background-position: center top;
-    background-attachment: fixed; /* effet sympa, optionnel */
-}
+    background-attachment: fixed;
+} */
 
 .vnlgrid{
     display: grid;
@@ -687,7 +687,7 @@ html, body {
     margin: 20px 20px;
 }
 
-.actubody{
+/* .actubody{
     margin: 0;
     padding: 0;
     background: 
@@ -695,8 +695,8 @@ html, body {
         url("visuels-p/fond.png");
     background-size: cover;
     background-position: center top;
-    background-attachment: fixed; /* effet sympa, optionnel */
-}
+    background-attachment: fixed;
+} */
 
 .moment {
     display: grid;
