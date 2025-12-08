@@ -129,7 +129,7 @@ html, body {
 .proj{
     display: grid;
     grid-template-columns: 30% 30% 30%;
-    grid-template-rows: repeat(3, 250px);
+    grid-template-rows: repeat(2, 250px);
     justify-content: center;
     justify-items: center;
     align-items: center;
@@ -141,7 +141,7 @@ html, body {
     .proj{
         display: grid;
         grid-template-columns: 30% 30% 30%;
-        grid-template-rows: repeat(3, 350px);
+        grid-template-rows: repeat(2, 350px);
         justify-content: center;
         justify-items: center;
         align-items: center;
@@ -156,7 +156,7 @@ html, body {
     .proj{
         display: grid;
         grid-template-columns: 30% 30% 30%;
-        grid-template-rows: repeat(3, 450px);
+        grid-template-rows: repeat(2, 450px);
         justify-content: center;
         justify-items: center;
         align-items: center;
@@ -423,7 +423,7 @@ html, body {
 
 .bloc-projet {
     position: relative;
-    margin-bottom: 10px;
+    margin-bottom: 150px;
 }
 
 .titre-sticky {
