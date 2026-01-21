@@ -191,7 +191,7 @@ html, body {
     font-family: "Stack Sans Notch";
     text-decoration: none;
     color: rgb(0, 0, 0);
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
     justify-content: center;
     justify-items: center;
@@ -211,7 +211,7 @@ html, body {
         font-family: "Stack Sans Notch";
         text-decoration: none;
         color: rgb(0, 0, 0);
-        font-size: 30px;
+        font-size: 15px;
         text-align: center;
         justify-content: center;
         justify-items: center;
@@ -232,7 +232,7 @@ html, body {
         font-family: "Stack Sans Notch";
         text-decoration: none;
         color: rgb(0, 0, 0);
-        font-size: 40px;
+        font-size: 15px;
         text-align: center;
         justify-content: center;
         justify-items: center;
@@ -272,7 +272,7 @@ html, body {
     justify-items: center;
     align-items: center;
     text-align: center;
-    font-size: 15px;
+    font-size: 25px;
     box-sizing: border-box;
     padding: 20px;
 }
@@ -318,7 +318,7 @@ html, body {
         justify-items: center;
         align-items: center;
         text-align: center;
-        font-size: 35px;
+        font-size: 25px;
         box-sizing: border-box;
         padding: 20px;
     }
@@ -362,7 +362,7 @@ html, body {
 }
 
 .st{
-    text-decoration: underline red;
+    font-weight: bold;
 }
 
 /* .contact{
@@ -436,6 +436,7 @@ html, body {
     z-index: 10;
     font-size: 15px;
     font-weight: 600;
+    color: red;
     font-family: "Vend sans";
     display: grid;
     justify-content: center;

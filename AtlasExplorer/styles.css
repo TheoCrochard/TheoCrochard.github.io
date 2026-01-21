@@ -1,0 +1,9 @@
+.bodyacc{
+    background-image: url(visus/000026.jpg);
+}
+
+.accueil{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
